@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    app:cardCornerRadius="8dp"
+    app:cardPreventCornerOverlap="false"
+    app:contentPadding="16dp"
+    >
+
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--(차후 수정필요)습관 제목 색상은 나중에 아이콘 색상 지정되었을때, 다시 하얀색으루!(여기서 컬러속성 지우면 스타일로 자동 설정됨)-->
+        <TextView
+            android:id="@+id/habit_name"
+            style="@style/ListItemName"
+            android:textColor="#111111"
+            tools:text="습관 제목" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            style="@style/ListItemScore"
+            tools:text="0/0" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/ListItemCount"
+            android:layout_marginTop="7dp"
+            tools:text="최근 실행날짜" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
