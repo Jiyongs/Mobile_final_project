@@ -10,12 +10,14 @@
     android:foreground="?selectableItemBackground"
     app:cardCornerRadius="8dp"
     app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
     app:contentPadding="16dp"
+    android:id="@+id/card_view"
     >
 
     <LinearLayout
-        android:layout_width="110dp"
-        android:layout_height="110dp"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
         android:layout_gravity="center"
         android:gravity="center"
         android:orientation="vertical">
@@ -35,7 +37,7 @@
         <TextView
             android:id="@+id/tv_date"
             style="@style/ListItemCount"
-            android:layout_marginTop="7dp"
+            android:layout_marginTop="5dp"
             tools:text="최근 실행날짜" />
 
     </LinearLayout>

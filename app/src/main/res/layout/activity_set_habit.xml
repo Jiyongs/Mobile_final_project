@@ -7,116 +7,97 @@
     tools:context="com.example.jy.goodhabit_201520012.ActivitySetHabit"
     android:orientation="vertical">
 
+    <!--습관 이름-->
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0dip"
-        android:layout_weight="1">
+        style="@style/EditHabitNameForm"
+        android:paddingTop="16dp">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/EditHabitLabelStyle"
             android:text="습관 이름"/>
 
         <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/EditTextStyle"
             android:id="@+id/edtHName"
-            android:layout_weight="1"/>
+            android:hint="습관 이름"/>
+        <requestFocus />
+
     </LinearLayout>
 
+    <!--습관 목표-->
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0dip"
-        android:layout_weight="1">
+        style="@style/EditHabitLinearStyle"
+        android:paddingTop="16dp">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/EditHabitLabelStyle"
             android:text="목표 횟수"/>
 
         <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/EditTextStyle"
             android:id="@+id/edtHTarget"
-            android:layout_weight="1"/>
+            android:hint="습관 목표 횟수"
+            android:inputType="numberDecimal"/>
     </LinearLayout>
 
+    <!--아이콘 색상 지정 부분-->
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0dip"
-        android:layout_weight="1">
+        style="@style/EditHabitLinearStyle"
+        android:paddingTop="16dp">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="아이콘 색상번호"/>
+            style="@style/EditHabitLabelStyle"
+            android:text="아이콘 색상"/>
 
         <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/EditTextStyle"
             android:id="@+id/edtIColor"
-            android:layout_weight="1"/>
+            android:hint="색상 아이콘 넣을 곳"/>
     </LinearLayout>
 
+    <!--실행 날짜 지정 부분-->
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0dip"
-        android:layout_weight="1">
+        style="@style/EditHabitLinearStyle"
+        android:paddingTop="16dp">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/EditHabitLabelStyle"
             android:text="실행 날짜"/>
 
         <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/EditTextStyle"
             android:id="@+id/edtDoDay"
-            android:layout_weight="1"/>
+            android:hint="실행 날짜 지정"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:gravity="center_horizontal"
+        android:paddingTop="70dp">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnInit"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:layout_marginRight="15dp"
             android:text="초기화"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnInsert"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:layout_marginRight="15dp"
             android:text="입력"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnSelect"
-            android:text="조회"/>
+            android:id="@+id/btnCancle"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:text="취소"/>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="8">
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/edtHNameResult"
-            android:layout_weight="1"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/edtHCountResult"
-            android:layout_weight="1"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/edtIColorResult"
-            android:layout_weight="1"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/edtDoDayResult"
-            android:layout_weight="1"/>
-    </LinearLayout>
 
 </LinearLayout>
